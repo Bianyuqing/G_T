@@ -9,7 +9,12 @@
   },
   "dependencies": {
     "core-js": "^3.1.2",
+<<<<<<< HEAD
     "vue": "^2.6.10"
+=======
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3"
+>>>>>>> 727129f6534dce4d12815408662c5d964132bceb
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
@@ -29,9 +34,13 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
+<<<<<<< HEAD
     "rules": {
       "vue/no-unused-components":"off"
     },
+=======
+    "rules": {},
+>>>>>>> 727129f6534dce4d12815408662c5d964132bceb
     "parserOptions": {
       "parser": "babel-eslint"
     }
