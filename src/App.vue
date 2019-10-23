@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Content from "@/components/all/content"
+import Content from "@/components/content/content"
 
 export default {
   name: 'app',
