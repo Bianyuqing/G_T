@@ -1,0 +1,19 @@
+<template>
+    <div>
+      购物车的页面！
+    </div>
+</template>
+
+<script>
+    export default {
+        data(){
+            return{
+                
+            }
+        }
+    }
+</script>
+
+<style lang="scss" scoped>
+
+</style>
