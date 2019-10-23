@@ -1,6 +1,5 @@
 <template>
-    <div>
-<<<<<<< HEAD
+    <div class='home_big'>
         <Banner></Banner>
         <Tuijian></Tuijian>
         <NewCom></NewCom>
@@ -8,9 +7,7 @@
         <Shafa></Shafa>
         <BedCom></BedCom>
         <ManyCom></ManyCom>
-=======
          首页
->>>>>>> dev
     </div>
 </template>
 
@@ -31,7 +28,6 @@ import BedCom from '../BedCom'
 import ManyCom from '../manyCom'
     export default {
         components: {
-<<<<<<< HEAD
             // Footer
              Banner,
             Tuijian,
@@ -41,10 +37,8 @@ import ManyCom from '../manyCom'
             BedCom,
             ManyCom,
   },
-=======
             
-           },
->>>>>>> dev
+         
         data(){
             return{
 
@@ -54,5 +48,7 @@ import ManyCom from '../manyCom'
 </script>
 
 <style lang="scss" scoped>
-
+.home_big{
+    position: relative;
+}
 </style>

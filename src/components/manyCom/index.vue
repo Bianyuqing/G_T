@@ -56,7 +56,8 @@ export default {
   height:1.7rem;
   color:#d7d7d7;
   margin-top: 0.4rem;
-  margin-left: .76rem;
+  box-sizing: border-box;
+  padding-left: .76rem;
   font-size: 0.25rem;
 }
 /* 底部样式 */

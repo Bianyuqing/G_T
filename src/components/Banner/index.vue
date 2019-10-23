@@ -8,10 +8,11 @@
       </div>
     </div>
     <div class="menu">
-      <div class="yxd_item1" v-for="(item,index) in menus" :key="index">
+      <router-link class="yxd_item1" v-for="(item,index) in menus" :key="index" to='/home/details'>
+
         <img :src="item.imag" alt />
         <p>{{item.name}}</p>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>

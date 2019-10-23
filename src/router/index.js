@@ -4,7 +4,8 @@ import Home from "@/components/all/home"
 import Classify from "@/components/all/classify"
 import Cart from "@/components/all/cart"
 import My from "@/components/all/my"
-
+// 引入menu的路由
+import Details from '../components/all/details.vue';
 
 Vue.use(VueRouter)
 
@@ -32,6 +33,10 @@ const routes=[
   {
     path:'/my',
     component:My,
+  },
+  {
+    path:'/home/details',
+    component:Details,
   }
 ]
 const router = new VueRouter({
