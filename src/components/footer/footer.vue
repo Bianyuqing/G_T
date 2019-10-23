@@ -4,7 +4,7 @@
       <ul>
         <router-link to="/home" tag="li">
           <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-shouye" />
+            <use xlink:href="#icon-zhuye" />
           </svg>
           <p>首页</p>
         </router-link>
@@ -50,9 +50,15 @@ export default {
 footer {
   width: 100%;
   height: 60px;
+<<<<<<< HEAD
   background: pink;
   // position: fixed;
   // bottom: 0;
+=======
+  background: rgb(252,252,252);
+  position: fixed;
+  bottom: 0;
+>>>>>>> 6e03b106b3ed75df2eb0b81875b8f663d4621bf3
 }
 ul,
 li {
@@ -61,23 +67,17 @@ li {
 ul {
   display: flex;
   height: 100%;
-  //    height:60px;
-  //    border:1px solid;
   li {
     width: 25%;
-    //    border:1px solid;
-    //    text-align:center;
-    //    line-height:60px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
+    // border:1px solid;
     p {
-      //    font-size:0.36rem;
-      border: 1px solid;
-      color: green;
+      // color: green;
       font-size: 0.14rem;
-      //   margin-bottom:100px;
+      text-align:center;
     }
   }
 }
