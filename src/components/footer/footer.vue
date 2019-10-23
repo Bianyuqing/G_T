@@ -50,7 +50,7 @@ export default {
 footer {
   width: 100%;
   height: 60px;
-  background: pink;
+  background: rgb(252,252,252);
   position: fixed;
   bottom: 0;
 }
@@ -67,9 +67,9 @@ ul {
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    border:1px solid;
+    // border:1px solid;
     p {
-      color: green;
+      // color: green;
       font-size: 0.14rem;
       text-align:center;
     }
