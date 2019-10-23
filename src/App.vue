@@ -29,5 +29,6 @@ export default {
   fill: currentColor;
   overflow: hidden;
   font-size:0.55rem;
+  text-align:center;
 }
 </style>

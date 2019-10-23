@@ -1,8 +1,8 @@
 <template>
     <div>
-        <header>搜索</header>
+        <!-- <header>搜索</header> -->
         <router-view></router-view>
-         <Footer></Footer>
+        <Footer></Footer>
         
     </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        1234567
+        
     </div>
 </template>
 
@@ -8,8 +8,8 @@
 
     export default {
         components: {
-            // Footer
-  },
+            
+           },
         data(){
             return{
 
