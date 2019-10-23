@@ -1,7 +1,12 @@
 <template>
-    <div>
-        <!-- <header>搜索</header> -->
-        <router-view></router-view>
+    <div class="content">
+
+        <div class="box">
+            <div>
+                <router-view></router-view>
+            </div>
+           
+        </div>
         <Footer></Footer>
         
     </div>
@@ -27,6 +32,21 @@ import Footer from "@/components/footer/footer"
        width:100%;
        height:100%;
        
+   }
+   .content{
+       width:100%;
+       height:100%;
+       display:flex;
+       flex-direction: column;
+       
+   }
+   .box{
+       width:100%;
+       
+       div{
+            flex:1;
+            min-height:101%;
+       }
    }
    header{
        width:100%;

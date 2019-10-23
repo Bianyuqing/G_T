@@ -1,21 +1,17 @@
 <template>
     <div>
-         首页
+       搜索
     </div>
 </template>
 
 <script>
-
     export default {
-        components: {
-            
-           },
         data(){
-            return{
-
-            }
+           return{
+              
+           }
         }
-    }
+    
 </script>
 
 <style lang="scss" scoped>
