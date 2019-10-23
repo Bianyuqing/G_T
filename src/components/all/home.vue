@@ -1,5 +1,6 @@
 <template>
     <div>
+<<<<<<< HEAD
         <Banner></Banner>
         <Tuijian></Tuijian>
         <NewCom></NewCom>
@@ -7,6 +8,9 @@
         <Shafa></Shafa>
         <BedCom></BedCom>
         <ManyCom></ManyCom>
+=======
+         首页
+>>>>>>> dev
     </div>
 </template>
 
@@ -27,6 +31,7 @@ import BedCom from '../BedCom'
 import ManyCom from '../manyCom'
     export default {
         components: {
+<<<<<<< HEAD
             // Footer
              Banner,
             Tuijian,
@@ -36,6 +41,10 @@ import ManyCom from '../manyCom'
             BedCom,
             ManyCom,
   },
+=======
+            
+           },
+>>>>>>> dev
         data(){
             return{
 

@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-   <Content></Content>
+   
+      <Content></Content>
+   
   </div>
 </template>
 
 <script>
-import Content from "@/components/all/content"
+import Content from "@/components/content/content"
 
 export default {
   name: 'app',
@@ -16,6 +18,17 @@ export default {
 </script>
 
 <style>
+body,html{
+  width:100%;
+  height:100%;
+  font-size:0.16rem;
+}
+#app{
+  width:100%;
+  height:100%;
+
+}
+
 *{
   margin:0;padding:0;
 }
@@ -28,6 +41,7 @@ export default {
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
-  font-size:0.55rem;
+  font-size:0.25rem;
+  text-align:center;
 }
 </style>
