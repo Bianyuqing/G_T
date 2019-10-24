@@ -7,60 +7,62 @@
 
       <div>
         <ul>
-          <li v-for="(v,i) in arr" :key="i" @click="wdhuan(v)" :class="{'wd-huan':v.zhuang}">
-              <p>{{v.title}}</p>
-             
-              
-             
-              </li>
-              
-         
+          <li v-for="(v,i) in arr" :key="i" @click="wdhuan(v,i)" :class="{'wd-huan':v.zhuang}"  >
+            <p>{{v.title}}</p>
+          </li>
         </ul>
         <div class="ding">
           <div class="d-d1">
-             <div v-for="(v,i) in arr" :key="i" class="d-d2">
-               <p>{{v.title}}</p>
-               <div class="d-d3">
-                 <div v-for="(v2,i2) in v.list" :key="i2" class="d-d4">
-                <img :src="v2.imgurl" alt=""/>
-                <p>{{v2.title}}</p>
+            <div v-for="(v,i) in arr" :key="i" class="d-d2" ref="xuan">
+              <p>{{v.title}}</p>
+              <div class="d-d3">
+                <!-- <router-link to="/wdxiang"+v.title></router-link> -->
+                <div v-for="(v2,i2) in v.list" :key="i2" class="d-d4" @click="wd(v.title)">
+                  <img :src="v2.imgurl" alt />
+                  <p class="wd_p">{{v2.title}}</p>
+                </div>
               </div>
-               </div>
-              
             </div>
           </div>
-
- 
-          
         </div>
       </div>
-
     </div>
   </div>
 </template>
 <script>
-
+import {mapActions} from 'vuex'
 export default {
   data() {
     return {
       arr: []
     };
   },
-  methods: {
-    wdhuan(v){
-      this.arr.map((v3,i)=>{
-        v3.zhuang=false
-      })
-      console.log(v)
-      v.zhuang=!v.zhuang
-      // this.arr.map((v2,i)=>{
-      //   v2.zhuang=!v2.zhuang
-      // })
-    }
+  components:{
+  },
 
+  methods: {
+    //  ...mapActions(['wd']),
+    wd(a){
+      
+        this.$router.push(`/wdxiang/${a}`)
+     
+    },
+    wdhuan(v,i) {
+      this.arr.map((v3, i) => {
+        v3.zhuang = false;
+      });
+      console.log(v);
+      v.zhuang = !v.zhuang;
+      let a=document.getElementsByClassName("d-d2");
+
+      // a[0].style.backgroundColor = "red";
+      // console.log(a[i].style)
+      // this.$refs.xuan[i].style.scrollMarginTo
+      
+    }
   },
   created() {
-    this.$http.get("http://localhost:8080/a.json").then(res => {
+    this.$http.get(" http://localhost:8080/a.json").then(res => {
       console.log(res);
       this.arr = res.data.classfiy;
     });
@@ -68,54 +70,53 @@ export default {
 };
 </script>
 <style lang="scss">
-.wd-huan{
-  background: #fff;
-  border-left:2px solid red;
+.wd_p{
+  margin-top:.2rem;
 }
-.ding{
-    width:80%;
-    height:9.2rem;
-    overflow: auto;
-    display: flex;
-    // border: 1px solid #000;
-   
-    .d-d1{
+.wd-huan {
+  background: #fff;
+  border-left: 2px solid red;
+}
+.ding {
+  width: 80%;
+  height: 9.2rem;
+  overflow: auto;
+  display: flex;
+  // border: 1px solid #000;
+
+  .d-d1 {
+    width: 100%;
+    min-height: 101%;
+    // display: flex;
+    // flex-wrap: wrap;
+    .d-d2 {
       width: 100%;
-      min-height: 101%;
-      // display: flex;
-      // flex-wrap: wrap;
-    .d-d2{
-      width: 100%;
-      >p{
+      > p {
         box-sizing: border-box;
-        padding-left:.4rem ;
+        padding-left: 0.4rem;
       }
-      .d-d3{
+      .d-d3 {
         width: 100%;
         display: flex;
-      flex-wrap: wrap;
+        flex-wrap: wrap;
       }
-       
-      .d-d4{
-         
+
+      .d-d4 {
         width: 30%;
         height: 2.45rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-       
 
-         >img{
-           display: block;
-        width: 1rem;
-        height: 1rem;
+        > img {
+          display: block;
+          width: 1rem;
+          height: 1rem;
+        }
       }
-      }
-     
     }
-    }
-
+  }
 }
 .wd-fen {
   width: 100%;

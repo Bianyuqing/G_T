@@ -1,5 +1,5 @@
 <template>
-  <div>
+  
     <footer>
       <ul>
         <router-link to="/home" tag="li">
@@ -31,7 +31,7 @@
   <use xlink:href="#icon-fenlei"></use>
       </svg>-->
     </footer>
-  </div>
+ 
 </template>
 
 <script>
@@ -50,15 +50,12 @@ export default {
 footer {
   width: 100%;
   height: 60px;
-<<<<<<< HEAD
   background: pink;
   // position: fixed;
   // bottom: 0;
-=======
   background: rgb(252,252,252);
   position: fixed;
   bottom: 0;
->>>>>>> 6e03b106b3ed75df2eb0b81875b8f663d4621bf3
 }
 ul,
 li {

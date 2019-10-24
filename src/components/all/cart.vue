@@ -1,9 +1,5 @@
 <template>
-<<<<<<< HEAD
-    <div >
-      购物车的页面！
-    </div>
-=======
+   
   <div class="cart">
         <header>
             <h3>购物车</h3>
@@ -21,7 +17,6 @@
             </div>
         </div>
   </div>
->>>>>>> 6e03b106b3ed75df2eb0b81875b8f663d4621bf3
 </template>
 
 <script>

@@ -1,17 +1,16 @@
 <template>
-<<<<<<< HEAD:src/components/all/content.vue
-    <div class="cont">
-        <header>搜索</header>
-        <div class="main">
+<div>
+    <div class="contt">
+      
+        <!-- <div class="main">
             <div>
                 <router-view></router-view>
 
             </div>
 
         </div>
-         <Footer></Footer>
-=======
-    <div class="content">
+         <Footer></Footer> -->
+          <!-- <div class="content">  -->
 
         <div class="box">
             <div>
@@ -20,9 +19,12 @@
            
         </div>
         <Footer></Footer>
->>>>>>> 6e03b106b3ed75df2eb0b81875b8f663d4621bf3:src/components/content/content.vue
         
     </div>
+</div>
+
+   
+   
 </template>
 
 <script>
@@ -46,8 +48,7 @@ import Footer from "@/components/footer/footer"
        height:100%;
        
    }
-<<<<<<< HEAD:src/components/all/content.vue
-   .cont{
+   .contt{
        width:100%;
        height: 100%;
        display: flex;
@@ -62,7 +63,6 @@ import Footer from "@/components/footer/footer"
                 width:100%;
                 min-height: 103%;
             }
-=======
    .content{
        width:100%;
        height:100%;
@@ -76,7 +76,6 @@ import Footer from "@/components/footer/footer"
        div{
             flex:1;
             min-height:101%;
->>>>>>> 6e03b106b3ed75df2eb0b81875b8f663d4621bf3:src/components/content/content.vue
        }
    }
    header{
@@ -87,4 +86,7 @@ import Footer from "@/components/footer/footer"
        text-align:center;
        line-height:60px;
    }
+       }
+   }
+
 </style>

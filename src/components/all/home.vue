@@ -7,11 +7,13 @@
         <Shafa></Shafa>
         <BedCom></BedCom>
         <ManyCom></ManyCom>
-         首页
+        
     </div>
 </template>
 
 <script>
+import "../../rem.js/rem.js";
+
 // 引入banner部分
 import Banner from '../Banner'
 // 引入品牌推荐部分
