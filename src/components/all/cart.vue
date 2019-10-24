@@ -61,6 +61,7 @@ content {
     margin-top:0.54rem;
     color:rgb(102,102,102);
     font-size:0.16rem;
+    font-weight:lighter;
   }
   h6:nth-of-type(2) {
     font-size: 0.12rem;
@@ -69,6 +70,8 @@ content {
     margin-top:0.14rem;
     color:rgb(153,153,153);
     font-size:0.16rem;
+    font-weight:lighter;
+
   }
   p {
     border: 1px solid;
@@ -91,6 +94,8 @@ content {
       display:flex;
       justify-content: center;
       align-items:center;
+    font-weight:normal;
+
       span{
           color:gold;
           font-size:0.3rem;

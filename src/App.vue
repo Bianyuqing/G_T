@@ -22,6 +22,7 @@ body,html{
   width:100%;
   height:100%;
   font-size:0.16rem;
+  box-sizing:border-box;
 }
 #app{
   width:100%;
