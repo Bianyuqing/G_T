@@ -1,15 +1,16 @@
 <template>
     <div>
         <header>
-            <p @click="back()">＜</p>
+            <!-- <p @click="back()">＜</p> -->
             <h2>商品搜索</h2>
-            <p></p>
         </header>
         <div class="inp">
             <input type="text" v-model="txt" @keydown.enter="search()" @change="change()"/>
             <span @click="back()">取消</span>
         </div>
         <!-- {{this.$store.state.cart}} -->
+        
+        
         <ul class="ul" v-show="flag">
             <router-link to="/com" tag="li">综合</router-link>
             <router-link to="/num" tag="li">销量</router-link>
@@ -18,18 +19,18 @@
         </ul>
         <div class="bian_left">
                <div class="list" v-for="(item,key) in arr" :key="key">
-                    <p></p>
+                    <img :src="item.img"/>
                     
                           <h4>{{item.name}}{{item.name1}}</h4>
-                           <ul>
+                           <!-- <ul>
                                <li><h3>￥{{item.price}}</h3></li>
                                <li><h5>销量：0</h5></li>
                           </ul>
-                         
+                          -->
                           <!-- <button @click="add(item)">加入</button> -->
                     </div>
                 
-                </div>
+        </div>
            
         </div>
         
@@ -56,7 +57,7 @@
                 this.arr=this.info.hot.filter((item,key,arr)=>{
                      return item.name1.indexOf(this.txt)>-1
                 })
-                console.log("arr::::::::",this.arr)
+                
             },
             back(){
                 this.$router.back(-1)
@@ -92,20 +93,24 @@
     margin:0;padding:0;
     
 }
+img{
+     width:2.8rem;
+     height:2.8rem;
+    
+}
 header{
     width:100%;
     height:0.7rem;
-    border:1px solid;
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
-    p{
-        font-size:30px;
+    h2{
+        font-size:0.3rem;
         font-weight:bold;
     }
 }
 input{
-    width:3rem;
+    width:70%;
     height:0.45rem;
     background:white;
     display:block;
@@ -127,7 +132,7 @@ input{
 .ul{
      width:100%;
      height:40px;
-     border:1px solid;
+    //  border:1px solid;
      display:flex;
      list-style:none;
      align-items:center;
@@ -169,4 +174,5 @@ li{
                  font-weight:lighter;
              }
         }
+
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="content">
-
+       
         <div class="box">
             <div>
                 <router-view></router-view>
@@ -8,13 +8,12 @@
             </div>
            
         </div>
-        <Footer></Footer>
         
     </div>
 </template>
 
 <script>
-import Footer from "@/components/footer/footer"
+// import Footer from "@/components/footer/footer"
 
     export default {
         data(){
@@ -22,9 +21,9 @@ import Footer from "@/components/footer/footer"
 
             }
         },
-        components:{
-            Footer,
-        }
+        // components:{
+        //     Footer,
+        // }
     }
 </script>
 
@@ -44,7 +43,7 @@ import Footer from "@/components/footer/footer"
    .box{
        width:100%;
        
-       div{
+       .box>div{
             flex:1;
             min-height:101%;
        }
@@ -57,4 +56,5 @@ import Footer from "@/components/footer/footer"
        text-align:center;
        line-height:60px;
    }
+ 
 </style>
