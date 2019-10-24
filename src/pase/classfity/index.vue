@@ -69,7 +69,7 @@ export default {
   }
 };
 </script>
-<style lang="scss">
+<style lang="scss"  scoped>
 .wd_p{
   margin-top:.2rem;
 }

@@ -20,6 +20,7 @@
 </template>
 
 <script>
+import Footer from '../footer/footer'
 export default {
   data() {
     return {};
@@ -28,8 +29,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-<<<<<<< HEAD
 .cart{
+  width:100%;
+  height:100%;
     box-sizing:border-box;
     background:rgb(249,249,249)
 }
@@ -112,11 +114,4 @@ content {
        height:100%;
     //    border:1px solid;
    }
-=======
-     header{
-         width:100%;
-         height:60px;
-
-     }
->>>>>>> ba70dae86eb7a97ff0e1cf04b76a9dbee1274bae
 </style>

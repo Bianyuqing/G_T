@@ -15,17 +15,12 @@ Vue.use(VueRouter)
 const routes=[
    {
     path:'/',
-<<<<<<< HEAD
     redirect:'/home' 
-=======
-    redirect:'/content' 
->>>>>>> ba70dae86eb7a97ff0e1cf04b76a9dbee1274bae
    },
   //  {
   //   path:'/footer',
   //   component:Footer
   //  },
-<<<<<<< HEAD
   {
     path:"/wdxiang/:title",
     component:Main,
@@ -55,36 +50,6 @@ const routes=[
     component:My,
   },
 
-=======
-  {
-    path:"/content",
-    name:"Content",
-    component: Content,
-    children: [
-      {
-        path:"/",
-        redirect:"/home"
-      },
-      {
-        path:'/home',
-        component:Home,
-      },
-      {
-       path:'/classify',
-       component:Classify,
-     },
-     {
-       path:'/cart',
-       component:Cart,
-     },
-     {
-       path:'/my',
-       component:My,
-     }
-    ]
-  }
-   
->>>>>>> ba70dae86eb7a97ff0e1cf04b76a9dbee1274bae
 ]
 const router = new VueRouter({
     routes,

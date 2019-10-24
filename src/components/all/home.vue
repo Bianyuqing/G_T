@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
     <div class='home_big'>
         <Banner></Banner>
         <Tuijian></Tuijian>
@@ -9,10 +8,6 @@
         <BedCom></BedCom>
         <ManyCom></ManyCom>
         
-=======
-    <div>
-        ddd
->>>>>>> ba70dae86eb7a97ff0e1cf04b76a9dbee1274bae
     </div>
 </template>
 

@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
 <div>
     <div class="contt">
       
@@ -13,18 +12,16 @@
          <Footer></Footer> -->
           <!-- <div class="content">  -->
 
-        <div class="box">
+        <!-- <div class="box">
             <div>
                 <router-view></router-view>
             </div>
            
-        </div>
-=======
-    <div class="content">
+        </div> -->
+    <!-- <div class="content"></div> -->
     <!-- <header>搜索</header> -->
         <HeaderCom></HeaderCom>
         <router-view></router-view>
->>>>>>> ba70dae86eb7a97ff0e1cf04b76a9dbee1274bae
         <Footer></Footer>
     </div>
 </div>
@@ -54,7 +51,6 @@ import HeaderCom from "@/components/Header/Header"
        height:100%;
        
    }
-<<<<<<< HEAD
    .contt{
        width:100%;
        height: 100%;
@@ -95,13 +91,11 @@ import HeaderCom from "@/components/Header/Header"
    }
        }
    }
-=======
    .content {
        width: 100%;
        height: 100%;
        flex: 1;
        overflow: auto;
    }
->>>>>>> ba70dae86eb7a97ff0e1cf04b76a9dbee1274bae
 
 </style>

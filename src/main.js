@@ -2,16 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import Axios from 'axios'
 import  "@/vm/rem.js"
-<<<<<<< HEAD
 import router from "./router/index"
 import store from './store'
 Vue.prototype.$http=Axios
 
 
 
-=======
-import "@/vm/reset.css"
->>>>>>> ba70dae86eb7a97ff0e1cf04b76a9dbee1274bae
 Vue.config.productionTip = false
 
 

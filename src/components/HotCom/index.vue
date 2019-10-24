@@ -49,7 +49,7 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
 .hot_big{
     background: #f9f9f9;
     box-sizing: border-box;

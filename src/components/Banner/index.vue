@@ -44,7 +44,7 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
 /* 九宫格部分 */
 .menu {
   display: flex;
