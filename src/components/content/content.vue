@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 <div>
     <div class="contt">
       
@@ -18,8 +19,13 @@
             </div>
            
         </div>
+=======
+    <div class="content">
+    <!-- <header>搜索</header> -->
+        <HeaderCom></HeaderCom>
+        <router-view></router-view>
+>>>>>>> ba70dae86eb7a97ff0e1cf04b76a9dbee1274bae
         <Footer></Footer>
-        
     </div>
 </div>
 
@@ -29,6 +35,7 @@
 
 <script>
 import Footer from "@/components/footer/footer"
+import HeaderCom from "@/components/Header/Header"
 
     export default {
         data(){
@@ -36,9 +43,8 @@ import Footer from "@/components/footer/footer"
 
             }
         },
-        components:{
-            Footer,
-        }
+        components:{Footer,HeaderCom}
+        
     }
 </script>
 
@@ -48,6 +54,7 @@ import Footer from "@/components/footer/footer"
        height:100%;
        
    }
+<<<<<<< HEAD
    .contt{
        width:100%;
        height: 100%;
@@ -88,5 +95,13 @@ import Footer from "@/components/footer/footer"
    }
        }
    }
+=======
+   .content {
+       width: 100%;
+       height: 100%;
+       flex: 1;
+       overflow: auto;
+   }
+>>>>>>> ba70dae86eb7a97ff0e1cf04b76a9dbee1274bae
 
 </style>

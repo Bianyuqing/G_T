@@ -1,5 +1,8 @@
 <template>
+<<<<<<< HEAD
   
+=======
+>>>>>>> ba70dae86eb7a97ff0e1cf04b76a9dbee1274bae
     <footer>
       <ul>
         <router-link to="/home" tag="li">
@@ -24,14 +27,14 @@
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-xiazai" />
           </svg>
-          <p>My</p>
+          <p>我的</p>
         </router-link>
       </ul>
-      <!-- <svg class="icon" aria-hidden="true">
-  <use xlink:href="#icon-fenlei"></use>
-      </svg>-->
     </footer>
+<<<<<<< HEAD
  
+=======
+>>>>>>> ba70dae86eb7a97ff0e1cf04b76a9dbee1274bae
 </template>
 
 <script>
@@ -49,6 +52,7 @@ export default {
 }
 footer {
   width: 100%;
+<<<<<<< HEAD
   height: 60px;
   background: pink;
   // position: fixed;
@@ -56,9 +60,12 @@ footer {
   background: rgb(252,252,252);
   position: fixed;
   bottom: 0;
+=======
+  height: 1.1rem;
+  background: #fdfdfb;
+>>>>>>> ba70dae86eb7a97ff0e1cf04b76a9dbee1274bae
 }
-ul,
-li {
+ul,li {
   list-style: none;
 }
 ul {
@@ -72,9 +79,15 @@ ul {
     align-items: center;
     // border:1px solid;
     p {
+<<<<<<< HEAD
       // color: green;
       font-size: 0.14rem;
+=======
+      color: green;
+      font-size: .24rem;
+>>>>>>> ba70dae86eb7a97ff0e1cf04b76a9dbee1274bae
       text-align:center;
+      margin-top: .1rem;
     }
   }
 }
