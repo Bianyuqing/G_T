@@ -1,5 +1,9 @@
 <template>
-    <div class='home_big'>
+    <div class="tttt">
+        <h2>51找家具商城</h2>
+         <router-link to="/search1" tag="p" class="p_search">搜索商品</router-link>
+        
+          <div class='home_big'>
         <Banner></Banner>
         <Tuijian></Tuijian>
         <NewCom></NewCom>
@@ -7,13 +11,25 @@
         <Shafa></Shafa>
         <BedCom></BedCom>
         <ManyCom></ManyCom>
+<<<<<<< HEAD
+=======
+        <Footer></Footer>
+>>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
         
     </div>
+    </div>
+   
 </template>
 
 <script>
+<<<<<<< HEAD
 import "../../rem.js/rem.js";
 
+=======
+import Footer from "@/components/footer/footer"
+
+import Search from "@/components/all/search"
+>>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
 // 引入banner部分
 import Banner from '../Banner'
 // 引入品牌推荐部分
@@ -28,6 +44,7 @@ import Shafa from '../Shafa'
 import BedCom from '../BedCom'
 // 引入更多部分
 import ManyCom from '../manyCom'
+
     export default {
         components: {
             // Footer
@@ -38,9 +55,8 @@ import ManyCom from '../manyCom'
             Shafa,
             BedCom,
             ManyCom,
-  },
-            
-         
+            Footer,
+       },     
         data(){
             return{
 
@@ -50,7 +66,24 @@ import ManyCom from '../manyCom'
 </script>
 
 <style lang="scss" scoped>
+    .p_search{
+         width:100%;
+         height:0.7rem;
+        //  border:1px solid;
+         text-align:center;
+         line-height:0.7rem;
+         color:#ccc;
+    }
 .home_big{
     position: relative;
+}
+h2{
+    width:100%;
+    height:0.7rem;
+    // border:1px solid;
+    text-align:center;
+    line-height:0.7rem;
+    font-size:20px;
+    font-weight:bold;
 }
 </style>

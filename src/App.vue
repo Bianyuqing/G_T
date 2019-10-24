@@ -7,8 +7,7 @@
   
    
       <Content></Content>
-    <router-view name="wdxiang"></router-view>
-       <!-- <router-view></router-view> -->
+      <!-- <router-view name="search"></router-view> -->
   </div>
 </template>
 
@@ -43,6 +42,7 @@ body,html{
   width:100%;
   height:100%;
   font-size:0.16rem;
+  box-sizing:border-box;
 }
 #app{
   width:100%;

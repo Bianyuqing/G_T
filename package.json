@@ -36,10 +36,16 @@
       "eslint:recommended"
     ],
     "rules": {
+<<<<<<< HEAD
       "vue/no-unused-components": "off",
       "no-unused-vars": "off",
       "no-console": "off",
       "no-dupe-keys": "off"
+=======
+      "no-console": "off",
+      "vue/no-parsing-error": "off",
+      "no-unused-vars": "off"
+>>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
     },
     "parserOptions": {
       "parser": "babel-eslint"
