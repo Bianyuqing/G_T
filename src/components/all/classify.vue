@@ -1,13 +1,55 @@
 <template>
-    <div>
-    asdfghjkl
+
+
+ <div class="x_d">  
+           
+            <header>
+                <Header></Header>
+            </header>
+
+           <main>
+               <div>
+
+                     
+
+               </div>
+           </main>
+
+            <footer>
+                <Footer></Footer>
+            </footer>
+           
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div>
+    <Header></Header>
+      <div class="b_main">
+          <div>
+            
+          </div>
+       </div>
         <Footer></Footer>
-    </div>
+    </div> -->
 </template>
 
 <script>
 import Footer from "@/components/footer/footer"
 
+import Header from "@/components/header"
 
     export default {
         data(){
@@ -17,6 +59,8 @@ import Footer from "@/components/footer/footer"
         },
         components:{
            Footer,
+    Header
+
          }
     }
 </script>

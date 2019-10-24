@@ -1,33 +1,69 @@
 <template>
-  <div class="cart">
-        <header>
-            <h3>购物车</h3>
-        </header>
-        <content>
-            <h6 class="h6">购物车是空的~</h6>
-            <h6>赶紧买点宝贝慰劳下自己吧</h6>
-            <router-link to="/home" tag="p">去逛逛</router-link>
-            <h5><span>◎</span>已同步至好物园</h5>
-        </content>
-        <div class="more_goods">
-            <h4>更多精选商品</h4>
-            <div>
+
+ <div class="x_d">  
+           
+            <header>
+                <Header></Header>
+            </header>
+
+           <main>
+               <div>
+                          <content>
+                                      <h6 class="h6">购物车是空的~</h6>
+                                      <h6>赶紧买点宝贝慰劳下自己吧</h6>
+                                      <router-link to="/home" tag="p">去逛逛</router-link>
+                                      <h5><span>◎</span>已同步至好物园</h5>
+                                  </content>
+                                        <div class="more_goods">
+                              <h4>更多精选商品</h4>
+                              </div>
+
+               </div>
+           </main>
+
+            <footer>
+                <Footer></Footer>
+            </footer>
+           
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="cart">
+       <Header></Header>
+       <div class="b_main">
+          <div>
+
+       
                
             </div>
         </div>
+          </div>
+       </div>
+        
         <Footer></Footer>
-  </div>
+  </div> -->
 </template>
 
 <script>
 import Footer from "@/components/footer/footer"
-
+import Header from "@/components/header"
 export default {
   data() {
     return {};
   },
   components:{
     Footer,
+    Header
   }
 };
 </script>

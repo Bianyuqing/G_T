@@ -1,18 +1,61 @@
 <template>
-    <div class='de_big'>
-        <div class="de_backitem">
-             <router-link to='/home' class='de_back'>
-                <img src="../../../public/images/banck.jpg" alt="">
-            </router-link>
-            <p>沙发</p>
-        </div>
+ <div class="x_d">  
+           
+            <header>
+                <Header></Header>
+            </header>
+
+           <main>
+               <div>
+
+                            <div class="de_backitem">
+                                        <router-link to='/home' class='de_back'>
+                                            <img src="../../../public/images/banck.jpg" alt="">
+                                        </router-link>
+                                        <p>沙发</p>
+                                    </div>
+
+               </div>
+           </main>
+
+            <footer>
+                <Footer></Footer>
+            </footer>
+           
+            </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class='de_big'>
+         <Header></Header>
+          <div class="b_main">
+          <div>
+                               
+          </div>
+       </div>
+        
+        <Footer></Footer>
          
-    </div>
+    </div> -->
 </template>
 
 <script>
+import Footer from "@/components/footer/footer"
+import Header from "@/components/header"
+
     export default {
         name:'details',
+         components:{
+    Footer,
+    Header
+  }
     }
 </script>
 

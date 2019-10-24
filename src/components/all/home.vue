@@ -1,25 +1,82 @@
 <template>
-    <div class="tttt">
-        <h2>51找家具商城</h2>
-         <router-link to="/search1" tag="p" class="p_search">搜索商品</router-link>
+       <div class="x_d">  
+           
+            <header>
+                <Header></Header>
+            </header>
+
+           <main>
+               <div>
+
+                        
+                         <router-link to="/search1" tag="p" class="p_search">搜索商品</router-link>
         
-          <div class='home_big'>
-        <Banner></Banner>
-        <Tuijian></Tuijian>
-        <NewCom></NewCom>
-        <HotCom></HotCom>
-        <Shafa></Shafa>
-        <BedCom></BedCom>
-        <ManyCom></ManyCom>
-        <Footer></Footer>
+                         <div class='home_big'>
+                                <Banner></Banner>
+                                <Tuijian></Tuijian>
+                                <NewCom></NewCom>
+                                <HotCom></HotCom>
+                                <Shafa></Shafa>
+                                <BedCom></BedCom>
+                                <ManyCom></ManyCom>
+               </div>
+
+               </div>
+           </main>
+
+            <footer>
+                <Footer></Footer>
+            </footer>
+           
+            </div>
+
+
+
+
+           
+                            
+
+
+
+
+
+
+
+
+    <!-- <div class="tttt">
+       
+             <Header></Header>
         
-    </div>
-    </div>
+       
+        <main>
+            <div>
+                <h2>51找家具商城</h2>
+                <router-link to="/search1" tag="p" class="p_search">搜索商品</router-link>
+        
+                <div class='home_big'>
+                    <Banner></Banner>
+                    <Tuijian></Tuijian>
+                    <NewCom></NewCom>
+                    <HotCom></HotCom>
+                    <Shafa></Shafa>
+                    <BedCom></BedCom>
+                    <ManyCom></ManyCom>
+                
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <Footer></Footer>
+        </footer>
+        
+    </div> -->
    
 </template>
 
 <script>
 import Footer from "@/components/footer/footer"
+import Header from "@/components/header"
 
 import Search from "@/components/all/search"
 // 引入banner部分
@@ -47,6 +104,7 @@ import ManyCom from '../manyCom'
             Shafa,
             BedCom,
             ManyCom,
+            Header,
             Footer,
        },     
         data(){
@@ -58,6 +116,31 @@ import ManyCom from '../manyCom'
 </script>
 
 <style lang="scss" scoped>
+body,html{
+  width:100%;
+  height:100%;
+  font-size:0.16rem;
+  box-sizing:border-box;
+}
+#app{
+     weight:100%;
+    height:100%;
+}
+.content{
+     weight:100%;
+    height:100%;
+}
+.x_d{
+    weight:100%;
+    height:100%;
+
+}
+
+
+
+
+
+
     .p_search{
          width:100%;
          height:0.7rem;
@@ -77,5 +160,25 @@ h2{
     line-height:0.7rem;
     font-size:20px;
     font-weight:bold;
+}
+.tttt{
+    display:flex;
+    flex-direction:column;
+    header{
+        weight:100%;
+        height:1rem;
+        border:1px solid #000;
+    }
+    main{
+        flex:1;
+        overflow:auto;
+        >div{
+            min-height:101%
+        }
+    }
+    footer{
+        weight:100%;
+        height:1rem;
+    }
 }
 </style>

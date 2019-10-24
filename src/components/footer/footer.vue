@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <footer>
+  <div class="footer">
+    
       <ul>
         <router-link to="/home" tag="li">
           <svg class="icon" aria-hidden="true">
@@ -30,7 +30,7 @@
       <!-- <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-fenlei"></use>
       </svg>-->
-    </footer>
+    
   </div>
 </template>
 
@@ -47,12 +47,12 @@ export default {
   margin: 0;
   padding: 0;
 }
-footer {
+.footer {
   width: 100%;
   height: 60px;
   background: rgb(252,252,252);
-  position: fixed;
-  bottom: 0;
+  // position: fixed;
+  // bottom: 0;
 }
 ul,
 li {
