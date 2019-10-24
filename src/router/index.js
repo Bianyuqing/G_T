@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from "@/components/all/home"
+import Home from "@/components/all/home.vue"
 import Classify from "@/components/all/classify"
 import Cart from "@/components/all/cart"
 import My from "@/components/all/my"
@@ -18,6 +18,10 @@ import Details from '../components/all/details.vue';
 Vue.use(VueRouter)
 
 const routes=[
+  {
+    path:"/",
+    redirect:"/home"
+  },
    {
      path:'/home',
      component:Home,

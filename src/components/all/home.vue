@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="tttt">
         <h2>51找家具商城</h2>
          <router-link to="/search1" tag="p" class="p_search">搜索商品</router-link>
         

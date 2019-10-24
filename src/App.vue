@@ -2,7 +2,7 @@
   <div id="app">
    
       <Content></Content>
-      <router-view name="search"></router-view>
+      <!-- <router-view name="search"></router-view> -->
   </div>
 </template>
 
