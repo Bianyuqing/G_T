@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import store from '@/store'
 import router from "./router/index"
 import  "@/vm/rem.js"
 // 引入rest 
@@ -14,13 +15,13 @@ import 'wc-swiper/style.css'
 Vue.use(wcSwiper)
 Vue.prototype.$http=Axios;
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 
 
 
 new Vue({
   router,
- 
+  store,
   render: h => h(App),
 }).$mount('#app')

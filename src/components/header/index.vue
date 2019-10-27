@@ -18,5 +18,13 @@ export default {
     width:100%;
     height:1rem;
 }
-
+h2{
+    width:100%;
+    height:1rem;
+    text-align:center;
+    line-height:1rem;
+    font-size:20px;
+    font-weight:bold;
+    
+}
 </style>
