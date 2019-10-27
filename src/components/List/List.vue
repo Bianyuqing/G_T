@@ -28,11 +28,11 @@
       <div class="nan-dingdan">
         <div>
           <p>我的订单</p>
-          <p>查看全部订单></p>
+          <p @click="wd_tiao2">查看全部订单></p>
         </div>
         <div>
             <ul v-for="(item,key) in navtype" :key="key">
-                <li>
+                <li  @click="wd_tiao(key)">
                     <svg class="icon" aria-hidden="true">
                         <use :xlink:href="`#icon-${item.icon}`" />
                     </svg>
@@ -60,6 +60,14 @@
 
 export default {
   name: "List",
+  methods: {
+    wd_tiao(i){
+      this.$router.push(`/leibiao/${i}`)
+    },
+    wd_tiao2(){
+      this.$router.push(`/leibiao/${-1}`)
+    }
+  },
   data(){
       return{
            navtype:[

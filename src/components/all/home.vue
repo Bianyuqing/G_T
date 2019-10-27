@@ -1,35 +1,59 @@
 <template>
-    <div class="tttt">
-        <h2>51找家具商城</h2>
-         <router-link to="/search1" tag="p" class="p_search">搜索商品</router-link>
+       <div class="x_d">  
+           
+            <header>
+                <Header></Header>
+            </header>
+
+           <main>
+               <div>
+
+                        
+                         <router-link to="/search1" tag="p" class="p_search">搜索商品</router-link>
         
-          <div class='home_big'>
-        <Banner></Banner>
-        <Tuijian></Tuijian>
-        <NewCom></NewCom>
-        <HotCom></HotCom>
-        <Shafa></Shafa>
-        <BedCom></BedCom>
-        <ManyCom></ManyCom>
-<<<<<<< HEAD
-=======
-        <Footer></Footer>
->>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
-        
-    </div>
-    </div>
+                         <div class='home_big'>
+                                <Banner></Banner>
+                                <Tuijian></Tuijian>
+                                <NewCom></NewCom>
+                                <HotCom></HotCom>
+                                <Shafa></Shafa>
+                                <BedCom></BedCom>
+                                <ManyCom></ManyCom>
+               </div>
+
+               </div>
+           </main>
+
+            <footer>
+                <Footer></Footer>
+            </footer>
+           
+            </div>
+
+
+
+
+           
+                            
+
+
+
+
+
+
+
+
+  
+         
    
 </template>
 
 <script>
-<<<<<<< HEAD
-import "../../rem.js/rem.js";
 
-=======
 import Footer from "@/components/footer/footer"
+import Header from "@/components/header"
 
 import Search from "@/components/all/search"
->>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
 // 引入banner部分
 import Banner from '../Banner'
 // 引入品牌推荐部分
@@ -55,6 +79,7 @@ import ManyCom from '../manyCom'
             Shafa,
             BedCom,
             ManyCom,
+            Header,
             Footer,
        },     
         data(){
@@ -66,6 +91,19 @@ import ManyCom from '../manyCom'
 </script>
 
 <style lang="scss" scoped>
+body,html{
+  width:100%;
+  height:100%;
+  font-size:0.16rem;
+  box-sizing:border-box;
+}
+
+
+
+
+
+
+
     .p_search{
          width:100%;
          height:0.7rem;
@@ -86,4 +124,5 @@ h2{
     font-size:20px;
     font-weight:bold;
 }
+
 </style>

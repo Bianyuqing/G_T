@@ -1,48 +1,60 @@
 <template>
-    <div>
-        <header>
-            <!-- <p @click="back()">＜</p> -->
-            <h2>商品搜索</h2>
-        </header>
-        <div class="inp">
-            <input type="text" v-model="txt" @keydown.enter="search()" @change="change()"/>
-            <span @click="back()">取消</span>
-        </div>
-        <!-- {{this.$store.state.cart}} -->
-        
-        
-        <ul class="ul" v-show="flag">
-            <router-link to="/com" tag="li">综合</router-link>
-            <router-link to="/num" tag="li">销量</router-link>
-            <router-link to="/price" tag="li">价格</router-link>
-            <router-link to="/newgoods" tag="li">上新</router-link>
-        </ul>
-        <div class="bian_left">
-               <div class="list" v-for="(item,key) in arr" :key="key">
-                    <img :src="item.img"/>
-                    
-                          <h4>{{item.name}}{{item.name1}}</h4>
-                           <!-- <ul>
-                               <li><h3>￥{{item.price}}</h3></li>
-                               <li><h5>销量：0</h5></li>
-                          </ul>
-                          -->
-                          <!-- <button @click="add(item)">加入</button> -->
-                    </div>
-                
-        </div>
+ <div class="x_d">  
            
-        </div>
-        
-    </div>
+            <header>
+                <Header></Header>
+            </header>
+
+           <main>
+               <div>
+                            <div class="inp">
+                                        <input type="text" v-model="txt" @keydown.enter="search()" @change="change()"/>
+                                        <span @click="back()">取消</span>
+                                    </div>
+                                            <ul class="ul" v-show="flag">
+                                    <router-link to="/com" tag="li">综合</router-link>
+                                    <router-link to="/num" tag="li">销量</router-link>
+                                    <router-link to="/price" tag="li">价格</router-link>
+                                    <router-link to="/newgoods" tag="li">上新</router-link>
+                                </ul>
+                                    <div class="bian_left">
+                                                <div class="list" v-for="(item,key) in arr" :key="key">
+                                                        <img :src="item.img"/>
+                                                        
+                                                            <h4>{{item.name}}{{item.name1}}</h4>
+                                                            <!-- <ul>
+                                                                <li><h3>￥{{item.price}}</h3></li>
+                                                                <li><h5>销量：0</h5></li>
+                                                            </ul>
+                                                            -->
+                                                            <!-- <button @click="add(item)">加入</button> -->
+                                                        </div>
+                                                    
+                                            </div>
+               </div>
+           </main>
+
+            <footer>
+                <Footer></Footer>
+            </footer>
+           
+            </div>
+
+
+
+
+
+   
 </template>
 
 <script>
 
 
+import Footer from "@/components/footer/footer"
+import Header from "@/components/header"
 
     export default {
-
+ 
         data(){
             return{
                 txt:'',
@@ -51,6 +63,10 @@
                 flag:false,
             }
         },
+//       components:{
+//     Footer,
+//     Header
+//   }
         methods:{
             search(){ 
                 var that=this
@@ -84,12 +100,13 @@
                console.log(res.data)
               this.info=res.data
            })
+        },
+        components:{
+            Footer,
+            Header
         }
+        
     }
-<<<<<<< HEAD
-    
-=======
->>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
 </script>
 
 <style lang="scss" scoped>
@@ -167,9 +184,7 @@ li{
              width:100%;
              height:100%;
              flex:1;
-             h4{
-                
-             }
+           
              h3{
                   font-weight:lighter;
                   margin-top:0.5rem;

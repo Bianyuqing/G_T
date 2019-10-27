@@ -1,37 +1,45 @@
 <template>
-    <div>
-<<<<<<< HEAD
-        <Class></Class>
-=======
-    asdfghjkl
-        <Footer></Footer>
->>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
-    </div>
+
+
+ <div class="x_d">  
+           
+            <header>
+                <Header></Header>
+            </header>
+
+           <main>
+               <div>
+
+                     <Class></Class>
+
+               </div>
+           </main>
+
+            <footer>
+                <Footer></Footer>
+            </footer>
+           
+            </div>
+
 </template>
 
 <script>
-<<<<<<< HEAD
-import  Class from '../../pase/classfity'
-=======
 import Footer from "@/components/footer/footer"
+import Class from '@/pase/classfity'
+import Header from "@/components/header"
 
-
->>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
     export default {
         data(){
             return{
                 
             }
         },
-<<<<<<< HEAD
-         components: {
-             Class
-        }
-=======
         components:{
            Footer,
+    Header,
+    Class
+
          }
->>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
     }
 </script>
 

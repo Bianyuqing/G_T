@@ -1,41 +1,11 @@
 <template>
-<<<<<<< HEAD
+
 <div>
-    <div class="contt">
+   
       
-        <!-- <div class="main">
-            <div>
-                <router-view></router-view>
-
-            </div>
-
-        </div>
-         <Footer></Footer> -->
-          <!-- <div class="content">  -->
-
-        <!-- <div class="box">
-=======
-    <div class="content">
-       
-        <div class="box">
->>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
-            <div>
-                <router-view></router-view>
-               
-            </div>
-           
-<<<<<<< HEAD
-        </div> -->
-    <!-- <div class="content"></div> -->
-    <!-- <header>搜索</header> -->
-        <HeaderCom></HeaderCom>
         <router-view></router-view>
-        <Footer></Footer>
-=======
-        </div>
-        
->>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
-    </div>
+       
+    
 </div>
 
    
@@ -43,12 +13,7 @@
 </template>
 
 <script>
-<<<<<<< HEAD
-import Footer from "@/components/footer/footer"
-import HeaderCom from "@/components/Header/Header"
-=======
-// import Footer from "@/components/footer/footer"
->>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
+
 
     export default {
         data(){
@@ -56,14 +21,10 @@ import HeaderCom from "@/components/Header/Header"
 
             }
         },
-<<<<<<< HEAD
-        components:{Footer,HeaderCom}
+
+        components:{}
         
-=======
-        // components:{
-        //     Footer,
-        // }
->>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
+
     }
 </script>
 
@@ -111,7 +72,6 @@ import HeaderCom from "@/components/Header/Header"
        text-align:center;
        line-height:60px;
    }
-<<<<<<< HEAD
        }
    }
    .content {
@@ -121,7 +81,5 @@ import HeaderCom from "@/components/Header/Header"
        overflow: auto;
    }
 
-=======
  
->>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
 </style>

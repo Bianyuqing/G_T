@@ -1,37 +1,44 @@
 <template>
-<<<<<<< HEAD
-    <div class="my">
-       <List></List> 
-=======
-    <div>
-      我的
-      <Footer></Footer>
->>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
-    </div>
+<div class="x_d">            
+     <header>
+         <Header></Header>
+    </header>
+
+    <main>
+        <div>
+
+            <div class="my">
+                    <List></List> 
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <Footer></Footer>
+    </footer>
+           
+</div>
 </template>
 
 <script>
-<<<<<<< HEAD
 import List from "@/components/List/List";
-=======
 import Footer from "@/components/footer/footer"
+import Header from "@/components/header"
 
->>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
     export default {
         data(){
             return{
                 
             }
         },
-<<<<<<< HEAD
-        components:{List}
-        
-=======
-        components:{
+       components:{
+           List,
             Footer,
+            Header
         }
->>>>>>> 9650c86bd8b7fd8743fd3387f6bf614bf39ff597
-    }
+     }
 </script>
 
 <style lang="scss" scoped>

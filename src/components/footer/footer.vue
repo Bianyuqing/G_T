@@ -1,6 +1,8 @@
 <template>
   
     <footer>
+  <div class="footer">
+    
       <ul>
         <router-link to="/home" tag="li">
           <svg class="icon" aria-hidden="true">
@@ -27,8 +29,11 @@
           <p>我的</p>
         </router-link>
       </ul>
+      </div>
     </footer>
  
+   
+  
 </template>
 
 <script>
@@ -44,7 +49,7 @@ export default {
   margin: 0;
   padding: 0;
 }
-footer {
+.footer {
   width: 100%;
   height: 60px;
   background: pink;
@@ -55,6 +60,8 @@ footer {
   bottom: 0;
   height: 1.1rem;
   background: #fdfdfb;
+  // position: fixed;
+  // bottom: 0;
 }
 ul,li {
   list-style: none;

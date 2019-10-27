@@ -38,6 +38,7 @@ body,html{
 
 }
 
+
 body,html{
   width:100%;
   height:100%;
@@ -47,7 +48,21 @@ body,html{
 #app{
   width:100%;
   height:100%;
-
+  .content{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    .b_main{
+      width:100%;
+      flex:1;
+      overflow:auto;
+      >div{
+        width:100%;
+        min-width:101%;
+      }
+    }
+  }
 }
 
 *{
