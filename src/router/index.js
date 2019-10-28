@@ -1,12 +1,28 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from "@/components/all/home"
+// import Content from "@/components/content/content.vue"
+// import Home from "@/components/all/home"
+// import Classify from "@/components/all/classify"
+// import Cart from "@/components/all/cart"
+// import My from "@/components/all/my"
+const Main =()=>import('../pase/main')
+const Lei =()=>import('@/components/List/list_main.vue')
+// const HelloWorld = ()=>import("@/components/HelloWorld")
+import Home from "@/components/all/home.vue"
 import Classify from "@/components/all/classify"
 import Cart from "@/components/all/cart"
 import My from "@/components/all/my"
+import Search from "@/components/all/search"
+import Search1 from "@/components/search/search1"
+import Footer from "@/components/footer/footer"
+
+// import Com from "@/components/search/com"
+// import Newgoods from "@/components/search/newgoods"
+// import Price from "@/components/search/price"
+// import Num from "@/components/search/num"
+
 // 引入menu的路由
-import Details from '../components/all/details.vue';
-import Xiang from '../components/all/xiangCom.vue';
+import Details from '@/components/all/details.vue';
 
 Vue.use(VueRouter)
 
@@ -19,10 +35,39 @@ const routes=[
   //   path:'/footer',
   //   component:Footer
   //  },
+  {
+    path:'/leibiao/:index',
+    component:Lei
+  },
+  {
+    path:"/wdxiang/:title",
+    component:Main,
+    name:"wdxiang"
+  },
    {
      path:'/home',
      component:Home,
+     children:[
+      {
+        path:'/details',
+        component:Details,
+      }
+     ]
+
+     
    },
+   {
+    path:'/search1',
+
+    component:Search1,
+   },
+   {
+       path:'/search',
+       name:"search",
+      component:Search,
+       },
+
+   
    {
     path:'/classify',
     component:Classify,
@@ -35,13 +80,20 @@ const routes=[
     path:'/my',
     component:My,
   },
+
   {
     path:'/home/details/:name',
     component:Details,
   },
-   {
-        path:'/xiang/:index/:name',
-        component:Xiang,
+  {
+    path:'/footer',
+    component:Footer,
+    children:[
+        {
+          path:"/",
+          redirect:"/home"
+        },  
+    ]
   }
 ]
 const router = new VueRouter({

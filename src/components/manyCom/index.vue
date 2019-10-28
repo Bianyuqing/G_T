@@ -50,7 +50,7 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
 .commit{
   width: 100%;
   height:1.7rem;

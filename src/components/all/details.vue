@@ -1,52 +1,62 @@
 <template>
-  <div class="de_big">
-    <div class="de_backitem">
-      <router-link to="/home" class="de_back">
-        <img src="../../../public/images/banck.jpg" alt />
-      </router-link>
+ <div class="x_d">  
+           
+            <header>
+                <Header></Header>
+            </header>
 
-      <p>{{this.$route.params.name}}</p>
-    </div>
-    <div id="content">
-      <div class="big">
-        <swiper :options="swiperOption" ref="mySwiper">
-          <swiper-slide v-for="(i,n) in yd_list" :key="n">
-            <p class="yd" :class="{ydd:i.f}" @click="checkout(i,n)">{{i.name}}</p>
-          </swiper-slide>
-        </swiper>
+           <main>
+               <div>
 
-        <Shafa_item></Shafa_item>
-      </div>
-    </div>
-  </div>
-  <!-- slides -->
+                            <div class="de_backitem">
+                                        <router-link to='/home' class='de_back'>
+                                            <img src="../../../public/images/banck.jpg" alt="">
+                                        </router-link>
+                                        <p>沙发</p>
+                                    </div>
+
+               </div>
+           </main>
+
+            <footer>
+                <Footer></Footer>
+            </footer>
+           
+            </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class='de_big'>
+         <Header></Header>
+          <div class="b_main">
+          <div>
+                               
+          </div>
+       </div>
+        
+        <Footer></Footer>
+         
+    </div> -->
 </template>
 
 <script>
-import "swiper/dist/css/swiper.css";
+import Footer from "@/components/footer/footer"
+import Header from "@/components/header"
 
-import { swiper, swiperSlide } from "vue-awesome-swiper";
-// 引入沙发组件
-import Shafa_item from "../Shafa_item";
-export default {
-  name: "details",
-  components: {
-    swiper,
-    swiperSlide,
-    Shafa_item
+    export default {
+        name:'details',
+         components:{
+    Footer,
+    Header
   },
-  methods: {
-    checkout(i, n) {
-      //  this.yd_list.forEach(a,b){
-
-      //  }
-      if (!i.f) {
-        i.f = true;
-      } else {
-        i.f = false;
-      }
-    }
-  },
+  
   data() {
     return {
       f: false,
@@ -64,7 +74,7 @@ export default {
       ]
     };
   }
-};
+    }
 </script>
 
 <style lang="scss" scoped>

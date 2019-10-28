@@ -1,19 +1,19 @@
 <template>
-    <div class="content">
 
-        <div class="box">
-            <div>
-                <router-view></router-view>
-            </div>
-           
-        </div>
-        <Footer></Footer>
-        
-    </div>
+<div>
+   
+      
+        <router-view></router-view>
+       
+    
+</div>
+
+   
+   
 </template>
 
 <script>
-import Footer from "@/components/footer/footer"
+
 
     export default {
         data(){
@@ -21,9 +21,11 @@ import Footer from "@/components/footer/footer"
 
             }
         },
-        components:{
-            Footer,
-        }
+
+        components:{}
+        
+
+    
     }
 </script>
 
@@ -33,6 +35,21 @@ import Footer from "@/components/footer/footer"
        height:100%;
        
    }
+   .contt{
+       width:100%;
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       .main{
+           width: 100%;
+           height:80%;
+        //    overflow: hidden;
+        // flex:1;
+        //    display: flex;
+            >div{
+                width:100%;
+                min-height: 103%;
+            }
    .content{
        width:100%;
        height:100%;
@@ -43,7 +60,7 @@ import Footer from "@/components/footer/footer"
    .box{
        width:100%;
        
-       div{
+       .box>div{
             flex:1;
             min-height:101%;
        }
@@ -56,4 +73,14 @@ import Footer from "@/components/footer/footer"
        text-align:center;
        line-height:60px;
    }
+       }
+   }
+   .content {
+       width: 100%;
+       height: 100%;
+       flex: 1;
+       overflow: auto;
+   }
+
+ 
 </style>

@@ -39,7 +39,7 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
 /* 新品内容图片样式设置 */
 .bed_newTiao {
   margin-right: 0.28rem;

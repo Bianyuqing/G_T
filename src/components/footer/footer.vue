@@ -1,6 +1,8 @@
 <template>
-  <div>
+  
     <footer>
+  <div class="footer">
+    
       <ul>
         <router-link to="/home" tag="li">
           <svg class="icon" aria-hidden="true">
@@ -24,14 +26,14 @@
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-xiazai" />
           </svg>
-          <p>My</p>
+          <p>我的</p>
         </router-link>
       </ul>
-      <!-- <svg class="icon" aria-hidden="true">
-  <use xlink:href="#icon-fenlei"></use>
-      </svg>-->
+      </div>
     </footer>
-  </div>
+ 
+   
+  
 </template>
 
 <script>
@@ -47,15 +49,21 @@ export default {
   margin: 0;
   padding: 0;
 }
-footer {
+.footer {
   width: 100%;
   height: 60px;
+  background: pink;
+  // position: fixed;
+  // bottom: 0;
   background: rgb(252,252,252);
   position: fixed;
   bottom: 0;
+  height: 1.1rem;
+  background: #fdfdfb;
+  // position: fixed;
+  // bottom: 0;
 }
-ul,
-li {
+ul,li {
   list-style: none;
 }
 ul {
@@ -71,7 +79,10 @@ ul {
     p {
       // color: green;
       font-size: 0.14rem;
+      color: green;
+      font-size: .24rem;
       text-align:center;
+      margin-top: .1rem;
     }
   }
 }
