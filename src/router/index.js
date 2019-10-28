@@ -6,14 +6,15 @@ import Cart from "@/components/all/cart"
 import My from "@/components/all/my"
 // 引入menu的路由
 import Details from '../components/all/details.vue';
+import Xiang from '../components/all/xiangCom.vue';
 
 Vue.use(VueRouter)
 
 const routes=[
-  //  {
-    // path:'/',
-    // redirect:'/home' 
-  //  },
+   {
+    path:'/',
+    redirect:'/home' 
+   },
   //  {
   //   path:'/footer',
   //   component:Footer
@@ -35,8 +36,12 @@ const routes=[
     component:My,
   },
   {
-    path:'/home/details',
+    path:'/home/details/:name',
     component:Details,
+  },
+   {
+        path:'/xiang/:index/:name',
+        component:Xiang,
   }
 ]
 const router = new VueRouter({

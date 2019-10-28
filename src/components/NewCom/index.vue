@@ -9,7 +9,7 @@
         <img :src="item.img" alt />
         <p>{{item.name}}</p>
         <p>{{item.name1}}</p>
-        <p>￥{{item.price}}</p>
+        <p style='color:red'>￥{{item.price}}</p>
       </div>
     </div>
   </div>

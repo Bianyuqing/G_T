@@ -1,19 +1,19 @@
 {
     "yan":[
         {"id":"01","img":"../images/chang.jpg","name":"源厂直批"},
-        {"id":"02","img":"../images/chang.jpg","name":"源厂直批"},
-        {"id":"03","img":"../images/chang.jpg","name":"源厂直批"},
-        {"id":"04","img":"../images/chang.jpg","name":"源厂直批"}
+        {"id":"02","img":"../images/yan.jpg","name":"严选产品"},
+        {"id":"03","img":"../images/feng.jpg","name":"款式丰富"},
+        {"id":"04","img":"../images/geng.jpg","name":"便捷高效"}
     ],
     "menu":[
         {"id":1,"imag":"../images/menu_03.png","name":"沙发"},
-        {"id":2,"imag":"../images/menu_03.png","name":"沙发"},
-        {"id":3,"imag":"../images/menu_03.png","name":"沙发"},
-        {"id":4,"imag":"../images/menu_03.png","name":"沙发"},
-        {"id":5,"imag":"../images/menu_03.png","name":"沙发"},
-        {"id":6,"imag":"../images/menu_03.png","name":"沙发"},
-        {"id":7,"imag":"../images/menu_03.png","name":"沙发"},
-        {"id":8,"imag":"../images/menu_03.png","name":"沙发"}
+        {"id":2,"imag":"../images/menu_05.png","name":"床"},
+        {"id":3,"imag":"../images/menu_07.png","name":"餐桌椅"},
+        {"id":4,"imag":"../images/menu_09.png","name":"衣柜"},
+        {"id":5,"imag":"../images/menu_15.png","name":"电视柜"},
+        {"id":6,"imag":"../images/menu_16.png","name":"儿童床"},
+        {"id":7,"imag":"../images/menu_17.png","name":"鞋柜"},
+        {"id":8,"imag":"../images/menu_18.png","name":"品牌柜"}
     ],
     "tuijian":[
         {"id":10,"img":"../images/banner10.png"},
@@ -42,14 +42,14 @@
         {"id":29,"img":"../images/new_d.png","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000}
     ],
     "shaFa":[
-        {"id":30,"img":"../images/new_d.png","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000},
-        {"id":31,"img":"../images/sha_1.png","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000},
-        {"id":32,"img":"../images/new_d.png","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000},
-        {"id":33,"img":"../images/new_d.png","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000},
-        {"id":34,"img":"../images/new_d.png","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000},
-        {"id":35,"img":"../images/new_d.png","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000},
-        {"id":36,"img":"../images/new_d.png","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000},
-        {"id":37,"img":"../images/new_d.png","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000}
+        {"id":30,"img":"../images/23032a1c01a133504f373c728fd8008.jpg","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000},
+        {"id":31,"img":"../images/101d876e636128e13e33c1fa3c31eca.jpg","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000},
+        {"id":32,"img":"../images/cbf62bcd9b2ba251ae55655d2b97da1.jpg","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000},
+        {"id":33,"img":"../images/924c8a10d11b126b7fc0bf78742103a.jpg","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000},
+        {"id":34,"img":"../images/95451ed8aeeae91b20c26b4b55ddb69.jpg","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000},
+        {"id":35,"img":"../images/chuang.png","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000},
+        {"id":36,"img":"../images/sha_1 (2).png","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000},
+        {"id":37,"img":"../images/sah_1.jpg","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000}
     ],
     "bed":[
         {"id":40,"img":"../images/bed_1.png","name":"舒纤 轻奢级简头层真","name1":"皮大床 艾斯#","price":4000},

@@ -8,11 +8,13 @@
       </div>
     </div>
     <div class="menu">
-      <router-link class="yxd_item1" v-for="(item,index) in menus" :key="index" to='/home/details'>
-
+      <!-- <router-link class="yxd_item1" v-for="(item,index) in menus" :key="index" to=`/home/details/${}`> -->
+      <div class="yxd_item1" v-for="(item,index) in menus" :key="index" @click="xiao(item.name)">
         <img :src="item.imag" alt />
         <p>{{item.name}}</p>
-      </router-link>
+      </div>
+
+      <!-- </router-link> -->
     </div>
   </div>
 </template>
@@ -29,6 +31,9 @@ export default {
     this.getData();
   },
   methods: {
+    xiao(name) {
+      this.$router.push(`/home/details/${name}`);
+    },
     getData() {
       //console.log('this.$http:',this.$http);
       this.$http.get("http://localhost:8080/api/banner.json").then(res => {

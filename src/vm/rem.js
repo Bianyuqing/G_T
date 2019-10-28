@@ -4,7 +4,7 @@
         recalc = function () {
             var clientWidth = docEl.clientWidth;
             if (!clientWidth) return;
-            docEl.style.fontSize = 200 * (clientWidth / 750) + 'px';
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
         };
 
     if (!doc.addEventListener) return;
