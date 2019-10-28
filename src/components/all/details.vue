@@ -1,39 +1,34 @@
 <template>
- <div class="x_d">  
-           
-            <header>
-                <Header></Header>
-            </header>
+  <div class="x_d">
+    <header>
+      <Header>
+        <template slot=fanhui>
+          
+             <span class="wd_fanhui" @click="wd_hui">&lt;</span>
+            
+        </template>
+      </Header>
+    </header>
 
-           <main>
-               <div>
+    <main>
+      <div>
+        <div class="de_backitem">
+              
+          <!-- <router-link to="/home" class="de_back">
+            <img src="../../../public/images/banck.jpg" alt />
+          </router-link>
+          <p>沙发</p> -->
+        </div>
+      
+      </div>
+    </main>
 
-                            <div class="de_backitem">
-                                        <router-link to='/home' class='de_back'>
-                                            <img src="../../../public/images/banck.jpg" alt="">
-                                        </router-link>
-                                        <p>沙发</p>
-                                    </div>
+    <footer>
+      <Footer></Footer>
+    </footer>
+  </div>
 
-               </div>
-           </main>
-
-            <footer>
-                <Footer></Footer>
-            </footer>
-           
-            </div>
-
-
-
-
-
-
-
-
-
-
-    <!-- <div class='de_big'>
+  <!-- <div class='de_big'>
          <Header></Header>
           <div class="b_main">
           <div>
@@ -43,20 +38,26 @@
         
         <Footer></Footer>
          
-    </div> -->
+  </div>-->
 </template>
 
 <script>
-import Footer from "@/components/footer/footer"
-import Header from "@/components/header"
+import Footer from "@/components/footer/footer";
+import Header from "@/components/header";
 
-    export default {
-        name:'details',
-         components:{
+export default {
+  name: "details",
+  components: {
     Footer,
     Header
   },
+  methods: {
+     wd_hui(){
+          this.$router.go(-1)
+      },
+  },
   
+
   data() {
     return {
       f: false,
@@ -74,21 +75,23 @@ import Header from "@/components/header"
       ]
     };
   }
-    }
+};
 </script>
 
 <style lang="scss" scoped>
 // 头尾固定
-.de_big{
+.de_big {
   display: flex;
   flex-direction: column;
 }
 #content {
   flex: 1;
-  overflow: auto; }
+  overflow: auto;
+}
 
 #content > .big {
-  min-height: 186%; }
+  min-height: 186%;
+}
 // 导航
 .de_backitem {
   margin-top: 0.8rem;
