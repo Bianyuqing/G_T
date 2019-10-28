@@ -23,6 +23,7 @@ import Footer from "@/components/footer/footer"
 
 // 引入menu的路由
 import Details from '@/components/all/details.vue';
+import Xiang from '../components/all/xiangCom.vue';
 
 Vue.use(VueRouter)
 
@@ -85,6 +86,10 @@ const routes=[
     path:'/home/details/:name',
     component:Details,
   },
+  {
+    path:'/xiang/:index/:name',
+    component:Xiang,
+},
   {
     path:'/footer',
     component:Footer,
