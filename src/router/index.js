@@ -14,6 +14,7 @@ import Cart from "@/components/all/cart"
 import My from "@/components/all/my"
 import Search from "@/components/all/search"
 import Search1 from "@/components/search/search1"
+import Footer from "@/components/footer/footer"
 
 // import Com from "@/components/search/com"
 // import Newgoods from "@/components/search/newgoods"
@@ -21,7 +22,7 @@ import Search1 from "@/components/search/search1"
 // import Num from "@/components/search/num"
 
 // 引入menu的路由
-import Details from '../components/all/details.vue';
+import Details from '@/components/all/details.vue';
 
 Vue.use(VueRouter)
 
@@ -64,24 +65,6 @@ const routes=[
        path:'/search',
        name:"search",
       component:Search,
-        // children:[
-        //   {
-        //     path:'/com',
-        //     component:Com,
-        //   },
-        //   {
-        //     path:'/newgoods',
-        //     component:Newgoods,
-        //   },
-        //   {
-        //     path:'/num',
-        //     component:Num,
-        //   },
-        //   {
-        //     path:'/price',
-        //     component:Price,
-        //   }
-        // ]
        },
 
    
@@ -98,6 +81,20 @@ const routes=[
     component:My,
   },
 
+  {
+    path:'/home/details',
+    component:Details,
+  },
+  {
+    path:'/footer',
+    component:Footer,
+    children:[
+        {
+          path:"/",
+          redirect:"/home"
+        },  
+    ]
+  }
 ]
 const router = new VueRouter({
     routes,

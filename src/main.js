@@ -20,9 +20,7 @@ import "../public/rest/rest.css";
 import wcSwiper from 'wc-swiper'
 import 'wc-swiper/style.css'
 Vue.use(wcSwiper)
-Vue.prototype.$http=Axios;
 
-Vue.config.productionTip = false
 
 
 

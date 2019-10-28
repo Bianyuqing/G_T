@@ -1,5 +1,8 @@
 const state={
     arr:[],
-    title:""
+    title:"",
+    cart:[],
+    zhuang:true,
+
 }
 export default state
