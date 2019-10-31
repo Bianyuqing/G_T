@@ -1,7 +1,5 @@
 <template>
-
-
-<div class="x_d">            
+     <div class="x_d">            
      <header>
          <Header></Header>
     </header>
@@ -12,9 +10,9 @@
           
     <div class="yxd_banner">
       <div class='yxd_hd'>
-        <router-link to="/home/details/:name" class="yxd_back">＜</router-link>
+        <router-link to="/home" class="yxd_back">＜</router-link>
 
-        <span>{{this.$route.params.name}}</span>
+        <span>{{this.$route.params.name}}{{this.$route.params.name1}}</span>
       </div>
       <div id="content">
         <div class="big">
@@ -73,16 +71,20 @@
           <ul class='yxd_jian'>
              
                 <li>产地：</li>
-                <li>马来西亚</li>
-                <li>规格：双扶手单人位</li>
-                <li>860*870*1000</li>
-                <li>规格：双扶手单人位</li>
-                <li>860*870*1000</li>
-                <li>规格：双扶手单人位</li>
-                <li>860*870*1000</li>
+                <li>广东</li>
+                <li>规格：</li>
+                <li>1.5*2.0:2140*1630*1500
+                    1.8*2.0:2140*1930*1500
+                </li>
                 <li>材质：</li>
-                <li>马来西亚橡胶+小黄牛头皮层+高档布艺</li>
-              
+                <li>木方：桉木
+                    海绵：45密度高弹海绵
+                    高密度板
+                    符合夹板
+                    头层真皮
+                    不锈钢配件
+                </li>
+               
           </ul>
           <div class="yxd_tupian" v-for='(item) in  xiang' :key='item.id'>
             <img :src="item.img" alt="">
@@ -113,26 +115,12 @@
            
 </div>
 
-
-
-
-
-  <!-- <div class="yxd_xiang"> -->
-  <!-- </div> -->
 </template>
 
 <script>
-// 引入详情页
-import XianCom from "../XianCom";
-// 引入购物车组件
-import Shopping from '../Shopping';
-export default {
-  name: "xiangCom",
-  components: {
-    XianCom,
-    Shopping,
-  },
-  data() {
+    export default {
+        name:'HotTiao',
+           data() {
     return {
       i: this.$route.params.index,
       arr: [],
@@ -159,11 +147,11 @@ export default {
     getxiao() {
       this.$http.get("http://localhost:8080/api/banner.json").then(res => {
         console.log(res.data.shaFa);
-        this.arr = res.data.shaFa;
+        this.arr = res.data.hot;
       });
     }
   }
-};
+    }
 </script>
 
 <style lang="scss" scoped>
@@ -225,13 +213,21 @@ ul li {
     
     
   }
-  li:nth-of-type(9){
+  li:nth-of-type(3){
      width: 3.56rem;
       height: 1.75rem;
   }
-  li:nth-of-type(10){
+  li:nth-of-type(4){
      width: 3.56rem;
       height: 1.75rem;
+  }
+   li:nth-of-type(5){
+     width: 3.56rem;
+      height: 3rem;
+  }
+  li:nth-of-type(6){
+     width: 3.56rem;
+      height: 3rem;
   }
 }
 .yxd_shang{
@@ -409,13 +405,5 @@ ul li {
     align-items: center;
     // margin-left: 0.34rem;
   
-  }
-// }
-#content {
-  flex: 1;
-  overflow: auto; }
-
-#content > .big {
-  min-height: 120%; 
   }
 </style>

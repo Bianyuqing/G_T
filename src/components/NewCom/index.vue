@@ -5,8 +5,10 @@
       <router-link to="/home/new" class="yxd_newTiao">></router-link>
     </div>
     <div class="yxd_newContent">
-      <div class="yxd_newConten_item" v-for="(item,index) in newContent" :key="index">
-        <img :src="item.img" alt />
+      <div class="yxd_newConten_item" v-for="(item,index) in newContent" :key="index" @click='tiao(index,item)'>
+         <!-- <img src="http://img.zcool.cn/community/0161f656b0663e6ac7256cb052d31a.gif" :v-view="item.img"> -->
+         <img  v-lazy="item.img" >
+        <!-- <img :src="item.img" alt /> -->
         <p>{{item.name}}</p>
         <p>{{item.name1}}</p>
         <p style='color:red'>￥{{item.price}}</p>
@@ -26,6 +28,10 @@ export default {
     this.getData();
   },
   methods: {
+    tiao(index,item){
+     // alert(index);
+    this.$router.push(`/Shou/${index}/${item.name}/${item.name1}`);
+    },
     getData() {
       //console.log('this.$http:',this.$http);
       this.$http.get("http://localhost:8080/api/banner.json").then(res => {
@@ -52,7 +58,7 @@ export default {
   margin-top: 0.31rem;
 }
 .yxd_newConten_item p:nth-of-type(1) {
-  width: 2.63rem;
+  width: 3rem;
   margin-top: 0.26rem;
 }
 .yxd_newContent {

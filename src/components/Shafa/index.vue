@@ -5,7 +5,7 @@
       <router-link to="/home/new" class="shaFa_newTiao">></router-link>
     </div>
     <div class="shaFa_newContent">
-      <div class="shaFa_newConten_item" v-for="(item,index) in shaFa" :key="index">
+      <div class="shaFa_newConten_item" v-for="(item,index) in shaFa" :key="index" @click='ShaTiao(item,index)'>
         <img :src="item.img" alt />
         <p>{{item.name}}</p>
         <p>{{item.name1}}</p>
@@ -26,6 +26,10 @@ export default {
     this.getData();
   },
   methods: {
+    ShaTiao(item,index){
+      //alert(index);
+      this.$router.push(`/ShaTiao/${index}/${item.name}/${item.name1}`)
+    },
     getData() {
       //console.log('this.$http:',this.$http);
       this.$http.get("http://localhost:8080/api/banner.json").then(res => {
@@ -52,7 +56,7 @@ export default {
   margin-top: 0.31rem;
 }
 .shaFa_newConten_item p:nth-of-type(1) {
-  width: 2.63rem;
+  width: 3rem;
   margin-top: 0.26rem;
 }
 .shaFa_newContent {

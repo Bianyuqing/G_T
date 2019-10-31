@@ -24,6 +24,11 @@ import Footer from "@/components/footer/footer"
 // 引入menu的路由
 import Details from '@/components/all/details.vue';
 import Xiang from '../components/all/xiangCom.vue';
+// 引入路由
+const Shou=()=>import('../components/ShouTiao')  ;
+const HotTiao=()=>import('../components/HotTiao'); 
+const ShaTiao=()=>import('../components/ShaTiao'); 
+const BedTiao=()=>import('../components/BedTiao'); 
 
 Vue.use(VueRouter)
 
@@ -89,6 +94,22 @@ const routes=[
   {
     path:'/xiang/:index/:name',
     component:Xiang,
+},
+{
+  path:'/Shou/:index/:name/:name1',
+  component:Shou,
+},
+{
+  path:'/BedTiao/:index/:name/:name1',
+  component:BedTiao,
+},
+{
+  path:'/ShaTiao/:index/:name/:name1',
+  component:ShaTiao,
+},
+{
+  path:'/HotTiao/:index/:name/:name1',
+  component:HotTiao,
 },
   {
     path:'/footer',

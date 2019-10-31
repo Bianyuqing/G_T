@@ -5,7 +5,7 @@
       <router-link to="/home/new" class="bed_newTiao">></router-link>
     </div>
     <div class="bed_newContent">
-      <div class="bed_newConten_item" v-for="(item,index) in bed" :key="index">
+      <div class="bed_newConten_item" v-for="(item,index) in bed" :key="index" @click='BedTiao(index,item)'>
         <img :src="item.img" alt />
         <p>{{item.name}}</p>
         <p>{{item.name1}}</p>
@@ -26,6 +26,10 @@ export default {
     this.getData();
   },
   methods: {
+    BedTiao(index,item){
+     //alert(index);
+     this.$router.push(`/BedTiao/${index}/${item.name}/${item.name1}`)
+    },
     getData() {
       //console.log('this.$http:',this.$http);
       this.$http.get("http://localhost:8080/api/banner.json").then(res => {

@@ -7,7 +7,7 @@
             </router-link>
         </div>
         <div class="hot_Content">
-            <div class="hotItem" v-for='(item,index) in hot' :key='index'>
+            <div class="hotItem" v-for='(item,index) in hot' :key='index' @click='hotTiao(index,item)'>
                 <img :src="item.img" alt="">
                 <p>{{item.name}}</p>
                 <p>{{item.name1}}</p>
@@ -20,8 +20,12 @@
     </div>
 </template>
 <script>
+import HotTiao from '../HotTiao';
 export default {
     name:'hotCom',
+    components:{
+        HotTiao
+    },
     data(){
         return {
             hot:[],
@@ -31,6 +35,10 @@ export default {
         this.getData();
     },
     methods: {
+       hotTiao(index,item){
+         // alert(index)
+          this.$router.push(`/HotTiao/${index}/${item.name}/${item.name1}`)
+        },
         
          getData(){
           
@@ -68,7 +76,7 @@ export default {
     margin-top: .31rem;
 }
 .hotItem  p:nth-of-type(1){
-    width: 2.63rem;
+    width: 3rem;
     margin-top: 0.26rem;
 }
 .hot_Content{
